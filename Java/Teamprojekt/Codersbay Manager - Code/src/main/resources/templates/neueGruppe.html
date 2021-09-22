@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="style.css">
+    <title>Neue Gruppe</title>
+</head>
+<body>
+<div class="grid-container">
+
+
+    <div id="navigation" class="navigation">
+        <ul>
+            <li class="list ">
+                <a href="#">
+                    <span class="icon"><ion-icon name="home-outline"></ion-icon></span>
+                    <span class="title">Home</span>
+                </a>
+            </li>
+            <li class="list">
+                <a href="#">
+                    <span class="icon"><ion-icon name="people-outline"></ion-icon></span>
+                    <span class="title">Teilnehmer</span>
+                </a>
+            </li>
+            <li class="list active">
+                <a href="javascript:void(0)" class="dropbtn">
+                    <span class="icon"><ion-icon name="grid-outline"></ion-icon></span>
+                    <span class="title">Gruppen
+                    </span>
+                </a>
+            </li>
+        </ul>
+    </div>
+
+
+
+    <div class="content-container">
+        <div class="content">
+            <h2>Neue Gruppe</h2>
+            <div class="container-form">
+                <form class="form" action = "" th:action="@{/saveGruppe}" th:object ="${gruppe}" method="post">
+                    <input type="text" th:field ="*{name}" placeholder="Gruppenname" class="form-control mb-4 col-4">
+                    <input type="text" th:field ="*{ausbildungszweig}" placeholder="Ausbildungszweig" class="form-control mb-4 col-4">
+                    <input type="text" th:field ="*{gruppenNummer}" placeholder="Gruppen Nr." class="form-control mb-4 ">
+                    <input type="text" th:field ="*{kursbeginn}" placeholder="Kursbeginn" class="form-control mb-4 col-4">
+                    <input type="text" th:field ="*{kursende}" placeholder="Kursende" class="form-control mb-4 col-4">
+                    <button type="submit" class="btn btn-outline-success btn-sm">Speichern</button>
+                    <a th:href="@{/gruppen}"><button type="button" class="btn btn-outline-danger btn-sm">Abbrechen</button></a>
+
+                </form>
+            </div>
+
+        </div>
+    </div>
+
+</div>
+
+
+
+
+
+<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+<script src="/main.js"></script>
+
+
+
+
+
+
+
+</body>
+</html>
