@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/ScrollTrigger.min.js"></script>
+
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+
+    <link rel="stylesheet" href="/css/style.css">
+    <title>Portfolio db</title>
+</head>
+<body>
+  <button onclick="topFunction()" id="myBtn" title="Go to top"><div class="scroll-up"></div>top</button>
+
+
+    <div id="myNav" class="overlay">
+        <div class="overlay-container">
+            <div class="grid1"></div>
+            <div class="grid2">
+                <div class="overlay-content">
+                    <a href="#home" onclick="closeNav()">Home</a>
+                    <a href="#work" onclick="closeNav()">Incubator</a>
+                    <a href="#about" onclick="closeNav()">About Me</a>
+                    <a href="#contact" onclick="closeNav()">Contact</a>
+                </div>
+            </div>
+            <div class="grid3">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                <div class="overlay-content"><br><br><br>
+                    <p><span>e-mail:</span> abcd@gmail.com</p><br>
+                    <p><span>Tel:</span> +43 123456789</p><br><br>
+                    <p><span>Address:</span> Opernring 23, 1010 Wien</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id = "navbar" class="navbar">
+        <div class="inner-navbar">
+                <div class="logo"><a href="#home" id ="logo">db. design</a></div>
+
+      
+
+                <div class="menu">
+                    <div class="ham-container" onclick="openNav()">
+                        <div class="line"></div>
+                        <div class="line"></div>
+                        <div class="line"></div>
+                    </div>
+                </div> 
+        </div>
+    </div>
+    <div id="home" class="section-1">
+      <a href="#work"><div class="scroll-down animate__animated animate__fadeIn animate__delay-5s"></div></a>
+      
+      <div class="home-container">
+        <div class="home-showcase-grid">
+          <div class="home-text-container">
+            <h1 class="animate__animated animate__fadeInDown">Hello, I'm <span >Darius</span>.</h1>
+            <h2 class="animate__animated animate__fadeIn animate__delay-1s">I'm a <span>Web Developer</span></h2>
+            <p class="animate__animated animate__fadeIn animate__delay-3s">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam quis architecto quas quos aut magni! Reiciendis a laudantium eius debitis.</p>
+            <a href="#contact"><button class="btn-talk animate__animated animate__fadeIn animate__delay-5s">Let's talk</button></a>
+            
+          </div>
+          
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+
+
+
+    <div  class="section-2">
+      <div class="section-title">
+        <a id="work"> <h1  class="section-title animate__animated animate__fadeInDown">Incubator</h1>
+       
+      </div>
+
+        <div class="work-container">
+
+          <div class="work-showcase-grid">
+            <div class="img-container">
+              <a href="conway.html"><img src="/img/conway.jpg" alt="" class="img"></a>
+              
+            </div>
+            <div class="text-container">
+              <h1><a href="conway.html">Conway's Game of Life</a></h1><br>
+            </div>
+          </div>
+          <div class="work-showcase-grid">
+            <div class="img-container">
+              <img src="/img/n-back1.jpg" alt="" class="img">
+            </div>
+            <div class="text-container">
+
+              <h1><a href="#">Dual N-Back</a></h1><br>
+              
+            </div>
+          </div>
+        </div>
+    </div>
+    <div id="about" class="section-3">
+      <div class="section-title">
+        <h1 class="section-title">About Me</h1>
+        <div class="about-showcase-grid">
+          <div class="cv-container">
+            <!-- <h2>My Skills</h2> -->
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Neque excepturi, obcaecati repellat incidunt provident nulla. Quo dicta repudiandae corrupti culpa dignissimos tempora reprehenderit iste, voluptatibus deleniti nim cupiditate ipsam est? Quasi possimus eaque dolorum, reiciendis temporibus delectus modi.</p><br>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Neque excepturi, obcaecati repellat incidunt provident nulla. Quo dicta repudiandae corrupti culpa dignissimos tempora reprehenderit iste, vole autem facere magni veniam odit, eos accusantium eligendi enim cupiditate ipsam est? Quasi possimus eaque dolorum, reiciendis temporibus delectus modi.</p><br>
+            <img src="/img/html.png" alt="">
+            <img src="/img/css.png" alt="">
+            <img src="/img/js.png" alt="">
+            <img src="/img/node.png" alt="">
+            <img src="/img/sql.png" alt=""><br>
+            <a href="CV.pdf"><button class="btn-talk" >My CV</button></a><br>
+            <!-- <h2>My CV</h2>
+           
+            <a href="CV.pdf"><button class="btn-talk" style="align-self: flex-start;">Let's talk</button></a> -->
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <div id="contact" class="section-4">
+      <div class="section-title">
+        <h1 class="section-title" style="margin-top: 8rem;">Let's Talk</h1>
+      </div>
+        <div class="form-container">
+            <form class="contact-form">
+                <!-- <h2>Let's Talk</h2> -->
+                <input type="text" id="name" placeholder="Your Name"><br>
+                <input type="email" id="email" placeholder="Your Email"><br>
+                <input type="text" id="subject" placeholder="Subject"><br>
+                <textarea placeholder="Your Message" id="message" cols="30" rows="5"></textarea><br>
+                <input type="submit" class="submit" value="Send Message">
+            </form>
+        </div>
+    </div>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/ScrollTrigger.min.js"></script>
+
+    <script src="/js/main.js"></script>
+</body>
+</html>
