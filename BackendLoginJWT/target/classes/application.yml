@@ -1,0 +1,23 @@
+#siehe JwtTokenProvider.java
+jwt:
+  secret: 82084h0nfhsBI9UIH$jw0+30dpaj
+
+server:
+  port: 8080
+
+spring:
+  datasource:
+    url: jdbc:mysql://localhost:3306/learn
+    password: password
+    username: root
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MySQL8Dialect
+#  mvc:
+#    throw-exception-if-no-handler-found: true
+#  resources:
+#    add-mappings: false
