@@ -1,0 +1,46 @@
+<app-navbar></app-navbar>
+
+<div class="wrapper">
+  <!-- <div class="title">
+    <div *ngIf="groups">
+      <h1>{{groups.groupName}}</h1>
+    </div>
+  </div> -->
+
+  <div class="wrapper-group" fxLayout="row" fxLayoutAlign="space-evenly start" fxLayoutGap="2rem">
+
+    <mat-card *ngIf="groups" class="example-card" fxFlex="20%" >
+      <mat-card-title>{{groups.groupName}}</mat-card-title>
+      <mat-card-subtitle>{{groups.groupDescription}}</mat-card-subtitle>
+      <mat-divider></mat-divider>
+      <mat-card-content>
+        <mat-selection-list>
+          <a (click)="onPageChange(1)"><mat-list-item>About</mat-list-item></a>
+          <a (click)="onPageChange(2)"><mat-list-item>Messageboard</mat-list-item></a>
+          <a (click)="onPageChange(3)"><mat-list-item>Resources</mat-list-item></a>
+          <a (click)="onPageChange(4)"><mat-list-item>Members</mat-list-item></a>
+        </mat-selection-list>
+      </mat-card-content>
+      <mat-card-actions>
+
+      </mat-card-actions>
+    </mat-card>
+
+    <!-- <mat-card class="group-content">
+      <h4>About</h4>
+      <mat-divider></mat-divider>
+      <mat-card-content>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel corrupti maxime eaque in repellendus, velit molestias eum, inventore alias veniam quas suscipit iste ipsa voluptatum voluptatem natus recusandae quam adipisci ad possimus facere ex totam corporis. Enim at illum veniam sapiente, quidem saepe non doloribus fuga a soluta esse obcaecati.</p>
+      </mat-card-content>
+
+
+    </mat-card> -->
+    <app-groups-about [hidden]="pageRequested !==1"></app-groups-about>
+    <app-groups-messageboard [hidden]="pageRequested !==2"></app-groups-messageboard>
+    <app-groups-resources [hidden]="pageRequested !==3"></app-groups-resources>
+    <app-groups-members [hidden]="pageRequested !==4"></app-groups-members>
+
+  </div>
+
+
+</div>

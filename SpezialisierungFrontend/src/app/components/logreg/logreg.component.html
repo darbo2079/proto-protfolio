@@ -1,0 +1,24 @@
+<nav class="navbar">
+  <div class="container">
+      <div class="logo">
+        <span routerLink="">We Learn</span>
+      </div>
+      <!-- <ul class="nav">
+          <button class="btn-login" routerLink="/login">Login</button>
+          <button class="btn-register" routerLink="/register">Register</button>
+          <button class="btn" routerLink="/groups">Groups</button>
+      </ul> -->
+  </div>
+</nav>
+<div class="wrapper">
+  <mat-card class="group-content">
+    <mat-tab-group mat-align-tabs="center" animationDuration="0ms">
+      <mat-tab label="Login"><app-login></app-login></mat-tab>
+      <mat-tab label="Register"><app-register></app-register></mat-tab>
+    </mat-tab-group>
+
+
+  </mat-card>
+
+
+</div>

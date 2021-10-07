@@ -1,0 +1,24 @@
+.wrapper {
+  width: 1400px;
+  margin: 0 auto;
+  /* display: flex;
+  flex-direction: row;
+  gap: 3rem;
+  background-color: lightskyblue; */
+}
+
+mat-list-item {
+  cursor: pointer;
+}
+mat-card-content {
+  margin-top: 3rem;
+}
+mat-card h4 {
+  margin-bottom: 1.5rem;
+}
+.mat-list-item:hover {
+  background-color: lightgray !important;
+}
+.mat-list-item:focus {
+  background-color: lightgray !important;
+}

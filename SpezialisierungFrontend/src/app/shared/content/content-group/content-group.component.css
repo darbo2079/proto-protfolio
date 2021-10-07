@@ -1,0 +1,46 @@
+
+.wrapper {
+  width: 1400px;
+  margin: 0 auto;
+  /* display: flex;
+  flex-direction: row;
+  gap: 3rem;
+  background-color: lightskyblue; */
+
+}
+ .wrapper .wrapper-groups {
+  max-width: 1400px;
+
+  /* display: flex;
+  flex-direction: row;
+  flex-wrap: wrap; */
+
+  /* display: grid;
+  grid-template-columns: 1fr 1fr; */
+}
+
+/* app-cards-group {
+  grid-column: 1 / -1;
+} */
+
+.card {
+  width: 20rem;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  margin: 0;
+  padding: 1rem;
+  margin: 2rem;
+}
+.img {
+
+}
+.mat-card-content{
+
+}
+.groupTitle {
+
+/* margin-bottom: 3rem; */
+height: 5rem;
+
+margin: 0;
+padding: 0;
+}

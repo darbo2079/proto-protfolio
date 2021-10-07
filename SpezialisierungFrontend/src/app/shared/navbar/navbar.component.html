@@ -1,0 +1,14 @@
+<nav class="navbar">
+  <div class="container">
+    <div class="logo">
+      <a routerLink=""><span>We Learn</span></a>
+    </div>
+      <ul class="nav">
+          <a [matMenuTriggerFor]="menu">hc: User</a>
+                <mat-menu #menu="matMenu">
+              <button mat-menu-item>Profil</button>
+              <button mat-menu-item>Logout</button>
+          </mat-menu>
+      </ul>
+  </div>
+</nav>

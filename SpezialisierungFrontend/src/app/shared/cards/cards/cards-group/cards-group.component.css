@@ -1,0 +1,43 @@
+/* mat-card {
+  display: flex;
+  flex-direction:column;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  width: 300px;
+}
+
+.card-title {
+  background-color: bisque;
+  height: 3rem;
+}
+
+.card-content {
+  background-color: chartreuse;
+  height: 6rem;
+}
+
+.card-footer {
+  background-color: bisque;
+  height: 3rem;
+} */
+
+.card {
+  width: 20rem;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  margin: 0;
+  padding: 1rem;
+  margin: 2rem;
+}
+
+.groupTitle {
+
+/* margin-bottom: 3rem; */
+height: 5rem;
+
+margin: 0;
+padding: 0;
+}
+
+
+
+
+
